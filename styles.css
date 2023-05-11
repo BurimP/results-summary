@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.blue-box {
+  height: 35rem;
+  width: 25rem;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  transform: translateX(2%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.your-result {
+  font-size: 1.7rem;
+  color: hsl(0, 0%, 80%);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.circle {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 100%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.big-number {
+  color: white;
+  font-size: 5rem;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.small-number {
+  color: hsl(0, 0%, 70%);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.great {
+  font-size: 2rem;
+  color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.bottom-text {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(0, 0%, 70%);
+}
+
+.white-box {
+  height: 35rem;
+  width: 25rem;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px 0px;
+  box-shadow: 5px 10px 35px hsl(222, 49%, 85%);
+  transform: translateX(-2%);
+}
+
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 10px;
+  }
+
+  .blue-box {
+    transform: translateX(3%);
+  }
+
+  .white-box {
+    transform: translateX(-3%);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 8px;
+  }
+  .blue-box {
+    transform: translateX(4%);
+  }
+
+  .white-box {
+    transform: translateX(-4%);
+  }
+}
