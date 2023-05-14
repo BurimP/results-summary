@@ -20,7 +20,7 @@
       <div class="blue-box">
         <p class="your-result">Your Result</p>
         <div class="circle">
-          <p class="big-number">76</p>
+          <p class="big-number" id="big-number"></p>
           <p class="small-number">of 100</p>
         </div>
         <p class="great">Great</p>
@@ -31,12 +31,50 @@
         </p>
       </div>
       <div class="white-box">
-        <p class="summary">Summary</p>
-        <div class="red-box"></div>
-        <div class="yellow-box"></div>
-        <div class="green-box"></div>
-        <div class="blue-box"></div>
+        <p class="summary" id="summary">Summary</p>
+        <!-- RED BOX -->
+        <div class="red-box">
+          <div class="left">
+            <img id="red-img" />
+            <p id="red-title"></p>
+          </div>
+          <div class="right">
+            <p id="red-score"></p>
+          </div>
+        </div>
+        <!-- YELLOW BOX -->
+        <div class="yellow-box">
+          <div class="left">
+            <img id="yellow-img" />
+            <p id="yellow-title"></p>
+          </div>
+          <div class="right">
+            <p id="yellow-score"></p>
+          </div>
+        </div>
+        <!-- GREEN BOX -->
+        <div class="green-box">
+          <div class="left">
+            <img id="green-img" />
+            <p id="green-title"></p>
+          </div>
+          <div class="right">
+            <p id="green-score"></p>
+          </div>
+        </div>
+        <!-- PURPLE BOX -->
+        <div class="purple-box">
+          <div class="left">
+            <img id="purple-img" />
+            <p id="purple-title"></p>
+          </div>
+          <div class="right">
+            <p id="purple-score"></p>
+          </div>
+        </div>
+        <button class="btn">Continue</button>
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
