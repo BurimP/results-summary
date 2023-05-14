@@ -220,6 +220,19 @@ body {
     transform: translateX(-3%);
   }
 }
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 9px;
+  }
+
+  .blue-box {
+    transform: translateX(3.5%);
+  }
+
+  .white-box {
+    transform: translateX(-3.5%);
+  }
+}
 
 @media screen and (max-width: 410px) {
   html {
